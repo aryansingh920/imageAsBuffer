@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image</title>
+  </head>
+  <body>
+    <% if (error) { %>
+    <p><%= error %></p>
+    <% } else if (image) { %>
+    <h1>Image</h1>
+    <img
+      src="data:<%= image.contentType %>;base64,<%= image.data.toString('base64') %>"
+      alt="Image"
+    />
+    <% } %>
+  </body>
+</html>
