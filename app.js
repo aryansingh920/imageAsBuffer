@@ -11,7 +11,7 @@ app.set("views", path.join(__dirname, "views"));
 // Connect to MongoDB
 mongoose
   .connect(
-    "mongodb+srv://Admin_Aryan:test123@cluster0.ixtp3tq.mongodb.net/imageTest?retryWrites=true&w=majority",
+    "",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
